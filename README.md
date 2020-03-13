@@ -2,14 +2,24 @@
 
    总体采用U型结构，特征提取下采样结构使用EfficientNet-b5，上采样是由一系列DEConv模块组成的串联结构。
 
-##UEfficientNet网络模型整体结构如下：
+### UEfficientNet网络模型整体结构如下：
 ![](./pic/UEfficientNet.png)
 
-##DEConv上采样模块：
+### DEConv上采样模块：
 ![](./pic/deconv.png)
 
 
-### 原始Pytorch-UNet
+##训练代码说明
+
+    `train.py` unet模型的训练代码，scale是原始的缩放，val取所有数据的百分之多少
+
+    `train_unet.py`  unet模型的训练代码，scale改成了随机裁剪，val取所有数据的百分之多少
+
+    `train_effscale05.py`  UEfficientNet的训练代码，scale是原始的缩放倍数，val取所有数据的百分之多少
+
+    `train_effscale_2.py` UEfficientNet的训练代码，train和val数据分开加载，train的数据可本地增强
+
+## 以下是原始pytorch-UNet要求
 ![input and output for a random image in the test dataset](https://framapic.org/OcE8HlU6me61/KNTt8GFQzxDR.png)
 
 
