@@ -2,7 +2,7 @@
 
    总体采用U型结构，特征提取下采样结构使用EfficientNet-b5，上采样是由一系列DEConv模块组成的串联结构。
 
-![](http://qiniu.crsblog.cn/20200313220159.jpg)
+![在DRIVE数据集上实验结果](http://qiniu.crsblog.cn/20200313220159.jpg)
 
 ### UEfficientNet网络模型整体结构如下：
 ![](./pic/UEfficientNet.png)
