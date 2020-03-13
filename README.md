@@ -9,15 +9,15 @@
 ![](./pic/deconv.png)
 
 
-##训练代码说明
+## 训练代码说明
 
-    `train.py` unet模型的训练代码，scale是原始的缩放，val取所有数据的百分之多少
+   `train.py` unet模型的训练代码，scale是原始的缩放，val取所有数据的百分之多少
 
-    `train_unet.py`  unet模型的训练代码，scale改成了随机裁剪，val取所有数据的百分之多少
+   `train_unet.py`  unet模型的训练代码，scale改成了随机裁剪，val取所有数据的百分之多少
 
-    `train_effscale05.py`  UEfficientNet的训练代码，scale是原始的缩放倍数，val取所有数据的百分之多少
+   `train_effscale05.py`  UEfficientNet的训练代码，scale是原始的缩放倍数，val取所有数据的百分之多少
 
-    `train_effscale_2.py` UEfficientNet的训练代码，train和val数据分开加载，train的数据可本地增强
+   `train_effscale_2.py` UEfficientNet的训练代码，train和val数据分开加载，train的数据可本地增强
 
 ## 以下是原始pytorch-UNet要求
 ![input and output for a random image in the test dataset](https://framapic.org/OcE8HlU6me61/KNTt8GFQzxDR.png)
@@ -36,6 +36,7 @@ The model used for the last submission is stored in the `MODEL.pth` file, if you
 You can easily test the output masks on your images via the CLI.
 
 To see all options:
+
 `python predict.py -h`
 
 To predict a single image and save it:
