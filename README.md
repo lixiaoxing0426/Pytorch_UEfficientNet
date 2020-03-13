@@ -1,4 +1,15 @@
-# Pytorch-UNet
+# 这是一个将EfficientNet-b5的分类模型改成分割任务的代码示例
+
+   总体采用U型结构，特征提取下采样结构使用EfficientNet-b5，上采样是由一系列DEConv模块组成的串联结构。
+
+##UEfficientNet网络模型整体结构如下：
+![](./pic/UEfficientNet.png)
+
+##DEConv上采样模块：
+![](./pic/deconv.png)
+
+
+### 原始Pytorch-UNet
 ![input and output for a random image in the test dataset](https://framapic.org/OcE8HlU6me61/KNTt8GFQzxDR.png)
 
 
