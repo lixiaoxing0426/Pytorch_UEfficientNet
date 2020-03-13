@@ -1,0 +1,9 @@
+*.pyc
+data/
+__pycache__/
+checkpoints/
+checkpoints_drive/
+*.pth
+*.jpg
+SUBMISSION*
+*.pth
