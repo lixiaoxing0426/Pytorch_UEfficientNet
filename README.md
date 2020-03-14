@@ -2,7 +2,7 @@
 
    总体采用U型结构，特征提取下采样结构使用EfficientNet-b5，上采样是由一系列DEConv模块组成的串联结构。
 
-![](http://qiniu.crsblog.cn/20200313220159.jpg)
+![DRIVE_test数据集测试效果](http://qiniu.crsblog.cn/20200313220159.jpg)
 
 ### UEfficientNet网络模型整体结构如下：
 ![](./pic/UEfficientNet.png)
@@ -11,27 +11,29 @@
 ![](./pic/deconv.png)
 
 ## 数据说明
-路径
-drive数据image label result的展示
+训练数据集为原图和0/1分割label图。
 
 
 
-## 预训练模型下载（结合train里的代码说明）
+## DRIVE数据集训练模型下载
+
+预训练模型MODEL.pth可在[这里hcui](https://pan.baidu.com/s/1I8ML5IHIl-gfTVw3UGYnIw)下载。
+
 
 
 ## 训练代码说明
 
-   `train.py` unet模型的训练代码，scale是原始的缩放，val取所有数据的百分之多少
+   `train.py` unet模型的训练代码，scale是原始的缩放，val取所有数据的百分之多少。
 
-   `train_unet.py`  unet模型的训练代码，scale改成了随机裁剪，val取所有数据的百分之多少
+   `train_unet.py`  unet模型的训练代码，scale改成了随机裁剪，val取所有数据的百分之多少。
 
-   `train_effscale05.py`  UEfficientNet的训练代码，scale是原始的缩放倍数，val取所有数据的百分之多少
+   `train_effscale05.py`  UEfficientNet的训练代码，scale是原始的缩放倍数，val取所有数据的百分之多少。
 
-   `train_effscale_2.py` UEfficientNet的训练代码，train和val数据分开加载，train的数据可本地增强
+   `train_effscale_2.py` UEfficientNet的训练代码，train和val数据分开加载，train的数据可本地增强。
+
+
 
 ## 以下是原始pytorch-UNet要求
-![input and output for a random image in the test dataset](https://framapic.org/OcE8HlU6me61/KNTt8GFQzxDR.png)
-
 
 Customized implementation of the [U-Net](https://arxiv.org/pdf/1505.04597.pdf) in Pytorch for Kaggle's [Carvana Image Masking Challenge](https://www.kaggle.com/c/carvana-image-masking-challenge) from a high definition image. This was used with only one output class but it can be scaled easily.
 

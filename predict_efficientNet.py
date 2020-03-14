@@ -14,7 +14,7 @@ from utils import plot_img_and_mask
 
 from torchvision import transforms
 
-sys.path.append('../EfficientNet-PyTorch/')
+sys.path.append('./EfficientNet-PyTorch/')
 from efficientnet_pytorch import UEfficientNet
 import cv2
 #os.environ["CUDA_VISIBLE_DEVICES"] = "6"
